@@ -22,50 +22,50 @@ $(document).ready(function () {
 		q1 = {
 			question: "What is the name of Han Solo's ship?",
 			correct: 2,
-			multChoice: ['Ebon Hawk', 'Outrider', 'Millenium Falcon', 'Sun Crusher'],
-			image: 'assets/images/Millennium Falcon.jpg'
+            multChoice: ['Ebon Hawk', 'Outrider', 'Millenium Falcon', 'Sun Crusher'],
+            
 		},
 		q2 = {
 			question: "What color is Luke Skywalker's lightsaber in The Empire Strikes Back?",
 			correct: 1,
-			multChoice: ['Green', 'Blue', 'Purple', 'Yellow'],
-			image: 'assets/images/Luke Skywalker lightsaber.jpg'
+            multChoice: ['Green', 'Blue', 'Purple', 'Yellow'],
+            
 		},
 		q3 = {
 			question: "Who was Obi-Wan's master?",
 			correct: 3,
-			multChoice: ['Yoda', 'Mace Windu', 'Anakin Skywalker', 'Qui-Gon Jinn'],
-			image: 'assets/images/Qui-Gon-Jinn_1.jpeg'
+            multChoice: ['Yoda', 'Mace Windu', 'Anakin Skywalker', 'Qui-Gon Jinn'],
+            
 		},
 		q4 = {
 			question: "What is Luke Skywalker's favorite drink?",
 			correct: 0,
-			multChoice: ['Blue Milk', 'Water', 'Dr. Pepper', 'Orange Juice'],
-			image: 'assets/images/blue-milk-star-wars.jpg'
+            multChoice: ['Blue Milk', 'Water', 'Dr. Pepper', 'Orange Juice'],
+            
 		},
 		q5 = {
 			question: "Whose DNA did they use to create the clones?",
 			correct: 2,
 			multChoice: ['Boba Fett', 'Obi-Wan Kenobi', 'Jango Fett', 'Anakin Skywalker'],
-			image: 'assets/images/jango.jpeg'
+
 		},
 		q6 = {
 			question: "Who was Count Dooku's padawan before he left the Jedi Temple?",
 			correct: 0,
 			multChoice: ['Qui-Gon Jinn', 'Obi-Wan Kenobi', 'Mace Windu', 'Yoda'],
-			image: 'assets/images/Qui-Gon-Jinn-2.webp'
+
 		},
 		q7 = {
 			question: "What powers a lightsaber?",
 			correct: 3,
 			multChoice: ['Amethyst', 'Diamonds', 'Quartz', 'Ilum'],
-			image: 'assets/images/Lightsaber Crystal.jpg'
+
 		},
 		q8 = {
 			question: "What planet is Luke Skywalker from?",
 			correct: 1,
 			multChoice: ['Endor', 'Tatooine', 'Hoth', 'Naboo'],
-			image: 'assets/images/Star-Wars-Tatooine-sunset.jpg'
+
 		}
 	];
 
@@ -200,7 +200,7 @@ $(document).ready(function () {
 			$('#answersDiv').css('display', 'none');
 			$('#questionDiv').css('display', 'none');
 			$('#answerMsg').css('display', 'initial');
-			$('#image').attr('src', trivia[currentQuestion].gif);
+			$('#image').attr('src', trivia[currentQuestion].image);
 			$('#image').css('display', 'initial');
 			$('#answerMsg').html('<h3> You chose ' + answers[value] + '.</h3> <br><h3>The correct answer was ' + answers[correctAnswer] + '.</h3>');
 			setInterval(nextQuestion, 5 * 1000);
