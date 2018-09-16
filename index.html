@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Trivia Game</title>
+	<!-- reset css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- my stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- jquery code.jquery.com cdn-->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+	<!-- additional jquery from Google cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>Star Wars Trivia Game</h1>
+</header>
+<section class="container">
+	<div class="row">
+		<!-- Title Div -->
+		<div class="jumbotron">
+			<h2 id="startTitle">Press Start to Begin!</h2>
+			<!-- Question Div -->
+			<div id="questionDiv"></div>
+			<div id="answerMsg"></div>
+
+			<!-- answers Div -->
+			<div id="answersDiv">
+				<div class="answer col-lg-12" id="answer0" value="0"></div>
+				<div class="answer col-lg-12" id="answer1" value="1"></div>
+				<div class="answer col-lg-12" id="answer2" value="2"></div>
+				<div class="answer col-lg-12" id="answer3" value="3"></div>
+			</div>
+			<!-- image div -->
+			
+			<!-- timer Div -->
+			<div id="timerDiv"></div>
+
+			<!-- start and reset buttons div -->
+			<div id="buttonsDiv">
+				<!-- start button -->
+				<div class="btn btn-success" type="button" text="Start" id="start">Start</div>
+				<!-- reset button -->
+				<div class="btn btn-primary" type="button" text="Reset" id="reset">Start Over</div>
+			</div>
+
+			<!-- score div -->
+			<div id="scoreDiv"></div>
+		</div>
+		
+
+	</div>
+	
+</section>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
